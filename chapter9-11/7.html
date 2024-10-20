@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const randomIntFromInterval = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+        
+        let randomNumber =  randomIntFromInterval(1, 10)
+        console.log(randomNumber);
+
+        let guess = parseInt(prompt('guess the number from 1 to 10'))
+        if(randomNumber == guess){
+            alert('Bingoo! Correct Guess')
+        }else if(guess - randomNumber == 1){
+            alert('close enough to correct answer')
+        }
+
+
+    </script>
+</body>
+</html>

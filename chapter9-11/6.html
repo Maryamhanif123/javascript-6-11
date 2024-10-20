@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Marks Sheet</h1>
+    <p>Total Marks: 300</p>
+
+    <script>
+        let maths = parseInt(prompt('maths marks'))
+        let computer = parseInt(prompt('computer marks'))
+        let science = parseInt(prompt('science marks'))
+
+        sum = maths + computer + science;
+
+        total = 300
+        percentage = (total / sum) * 100;
+        let grade, remarks;
+        if (percentage >= 80) {
+            grade = 'A-one'
+            remarks = 'Excelent'
+        } else if (percentage >= 70) {
+            grade = 'A'
+            remarks = 'Good'
+        } else if (percentage >= 60) {
+            grade = 'B'
+            remarks = 'You need to improve'
+        } else {
+            grade = 'Fail'
+            remarks = 'Sorry'
+        }
+
+        document.write(`Marks Obtain: ${sum} <br>`)
+        document.write(`Percentage: ${percentage}% <br>`)
+        document.write(`Grade: ${grade}% <br>`)
+        document.write(`Remarks: ${remarks} <br>`)
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
